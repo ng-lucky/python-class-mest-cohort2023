@@ -1,0 +1,243 @@
+[
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "abstract_class",
+        "description": "abstract_class",
+        "peekOfCode": "class User:\n    first_name =''\n    last_name = ''\n    email = ''\n    phone_number = ''\n    alias = ''\n    password = ''\nclass Product:\n    name =''\n    type = ''",
+        "detail": "abstract_class",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "abstract_class",
+        "description": "abstract_class",
+        "peekOfCode": "class Product:\n    name =''\n    type = ''\n    price = 0\n    expiry_date = ''\n    weight = 0\nclass UserAbstract(ABC):\n    @abstractmethod\n    def create_user(self, user: User):\n        pass",
+        "detail": "abstract_class",
+        "documentation": {}
+    },
+    {
+        "label": "UserAbstract",
+        "kind": 6,
+        "importPath": "abstract_class",
+        "description": "abstract_class",
+        "peekOfCode": "class UserAbstract(ABC):\n    @abstractmethod\n    def create_user(self, user: User):\n        pass\n    @abstractmethod\n    def get_all_users(self):\n        pass\n    @abstractmethod\n    def get_user_by_id(self, user_id):\n        pass",
+        "detail": "abstract_class",
+        "documentation": {}
+    },
+    {
+        "label": "UserManager",
+        "kind": 6,
+        "importPath": "abstract_class",
+        "description": "abstract_class",
+        "peekOfCode": "class UserManager(UserAbstract):\n    def create_user(self, user: User):\n        print(\"Saving's in progress...  \\n\")\n        print(f\"First Name: {user.first_name}\")\n    def get_all_users(self):\n        print(\"hello tiny! we are getting all users here\")\n    def get_user_by_id(self, user_id):\n        first_name = 'Olamide'\n        last_name = 'Ahmed'\n        print(f\"Hello {first_name} {user_id}\")",
+        "detail": "abstract_class",
+        "documentation": {}
+    },
+    {
+        "label": "ProductAbstract",
+        "kind": 6,
+        "importPath": "abstract_class",
+        "description": "abstract_class",
+        "peekOfCode": "class ProductAbstract(ABC):\n    @abstractmethod\n    def create_product(self, product: Product):\n        pass\nuser = User()\nuser.alias = 'peru1234'\nuser.first_name = 'Peru'\nuser.last_name=\"Para\"\nuser_manager = UserManager()\nuser_manager.get_user_by_id(78)",
+        "detail": "abstract_class",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "kind": 5,
+        "importPath": "abstract_class",
+        "description": "abstract_class",
+        "peekOfCode": "user = User()\nuser.alias = 'peru1234'\nuser.first_name = 'Peru'\nuser.last_name=\"Para\"\nuser_manager = UserManager()\nuser_manager.get_user_by_id(78)\nuser_manager.create_user(user)",
+        "detail": "abstract_class",
+        "documentation": {}
+    },
+    {
+        "label": "user.alias",
+        "kind": 5,
+        "importPath": "abstract_class",
+        "description": "abstract_class",
+        "peekOfCode": "user.alias = 'peru1234'\nuser.first_name = 'Peru'\nuser.last_name=\"Para\"\nuser_manager = UserManager()\nuser_manager.get_user_by_id(78)\nuser_manager.create_user(user)",
+        "detail": "abstract_class",
+        "documentation": {}
+    },
+    {
+        "label": "user.first_name",
+        "kind": 5,
+        "importPath": "abstract_class",
+        "description": "abstract_class",
+        "peekOfCode": "user.first_name = 'Peru'\nuser.last_name=\"Para\"\nuser_manager = UserManager()\nuser_manager.get_user_by_id(78)\nuser_manager.create_user(user)",
+        "detail": "abstract_class",
+        "documentation": {}
+    },
+    {
+        "label": "user_manager",
+        "kind": 5,
+        "importPath": "abstract_class",
+        "description": "abstract_class",
+        "peekOfCode": "user_manager = UserManager()\nuser_manager.get_user_by_id(78)\nuser_manager.create_user(user)",
+        "detail": "abstract_class",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "car",
+        "description": "car",
+        "peekOfCode": "class Car():\n    color = ''\n    model = ''\n    speed = 0\n    brand = ''\n    fuel_tank = 0\n    number_of_wheels = 0\n    engine_size = 0\n    mileage = 0\n    year = 0",
+        "detail": "car",
+        "documentation": {}
+    },
+    {
+        "label": "car",
+        "kind": 5,
+        "importPath": "car",
+        "description": "car",
+        "peekOfCode": "car = Car('Tesla', 'Model S')\ncar.engine_size = 396\ncar.number_of_wheels = 4\ncar.mileage =  0\ncar.speed = 200\ncar.color = 'Wine Red'\nprint(f\"Mary's car model: {car.model} \\n\")\ncar.current_speed()\ncar.navigation(second_direction=\"Left\", direction=\"right\")\n# abena_car = Car()",
+        "detail": "car",
+        "documentation": {}
+    },
+    {
+        "label": "car.engine_size",
+        "kind": 5,
+        "importPath": "car",
+        "description": "car",
+        "peekOfCode": "car.engine_size = 396\ncar.number_of_wheels = 4\ncar.mileage =  0\ncar.speed = 200\ncar.color = 'Wine Red'\nprint(f\"Mary's car model: {car.model} \\n\")\ncar.current_speed()\ncar.navigation(second_direction=\"Left\", direction=\"right\")\n# abena_car = Car()\n# abena_car.brand = 'Toyotal'",
+        "detail": "car",
+        "documentation": {}
+    },
+    {
+        "label": "car.number_of_wheels",
+        "kind": 5,
+        "importPath": "car",
+        "description": "car",
+        "peekOfCode": "car.number_of_wheels = 4\ncar.mileage =  0\ncar.speed = 200\ncar.color = 'Wine Red'\nprint(f\"Mary's car model: {car.model} \\n\")\ncar.current_speed()\ncar.navigation(second_direction=\"Left\", direction=\"right\")\n# abena_car = Car()\n# abena_car.brand = 'Toyotal'\n# abena_car.model = 'Camry'",
+        "detail": "car",
+        "documentation": {}
+    },
+    {
+        "label": "car.mileage",
+        "kind": 5,
+        "importPath": "car",
+        "description": "car",
+        "peekOfCode": "car.mileage =  0\ncar.speed = 200\ncar.color = 'Wine Red'\nprint(f\"Mary's car model: {car.model} \\n\")\ncar.current_speed()\ncar.navigation(second_direction=\"Left\", direction=\"right\")\n# abena_car = Car()\n# abena_car.brand = 'Toyotal'\n# abena_car.model = 'Camry'\n# abena_car.year = 2017",
+        "detail": "car",
+        "documentation": {}
+    },
+    {
+        "label": "car.speed",
+        "kind": 5,
+        "importPath": "car",
+        "description": "car",
+        "peekOfCode": "car.speed = 200\ncar.color = 'Wine Red'\nprint(f\"Mary's car model: {car.model} \\n\")\ncar.current_speed()\ncar.navigation(second_direction=\"Left\", direction=\"right\")\n# abena_car = Car()\n# abena_car.brand = 'Toyotal'\n# abena_car.model = 'Camry'\n# abena_car.year = 2017",
+        "detail": "car",
+        "documentation": {}
+    },
+    {
+        "label": "car.color",
+        "kind": 5,
+        "importPath": "car",
+        "description": "car",
+        "peekOfCode": "car.color = 'Wine Red'\nprint(f\"Mary's car model: {car.model} \\n\")\ncar.current_speed()\ncar.navigation(second_direction=\"Left\", direction=\"right\")\n# abena_car = Car()\n# abena_car.brand = 'Toyotal'\n# abena_car.model = 'Camry'\n# abena_car.year = 2017",
+        "detail": "car",
+        "documentation": {}
+    },
+    {
+        "label": "pwd",
+        "kind": 5,
+        "importPath": "if_statements",
+        "description": "if_statements",
+        "peekOfCode": "pwd = input(\"Enter your password\")\nif userName == \"admin\" and pwd == \"1234@admin\":\n    print (\"Hello , you are logged in as Admin.\")\nelse:\n    print(\"Invalid username or password.Kindly try again.\")",
+        "detail": "if_statements",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "inheritance",
+        "description": "inheritance",
+        "peekOfCode": "class Car:\n    brand = ''\n    model = ''\n    year = 0\n    speed = 0\n    mileage = 0\n    def __init__(self, brand: str, model: str, year: int):\n        self.brand = brand\n        self.model = model\n        self.year = year",
+        "detail": "inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "ElectricCar",
+        "kind": 6,
+        "importPath": "inheritance",
+        "description": "inheritance",
+        "peekOfCode": "class ElectricCar(Car):\n    battery_capacity = 0\n    def __init__(self, brand, model, year, battery_capacity):\n        super().__init__(brand, model, year)\nclass CEngineCar(Car):\n    engine_capacity = 0\nelectric_car = ElectricCar(\"Tesla\", \"Model Y\", 2020,2000)\nelectric_car.battery_capacity = 2000\nprint(f\"CEngine car brand: {electric_car.brand} \")",
+        "detail": "inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "CEngineCar",
+        "kind": 6,
+        "importPath": "inheritance",
+        "description": "inheritance",
+        "peekOfCode": "class CEngineCar(Car):\n    engine_capacity = 0\nelectric_car = ElectricCar(\"Tesla\", \"Model Y\", 2020,2000)\nelectric_car.battery_capacity = 2000\nprint(f\"CEngine car brand: {electric_car.brand} \")",
+        "detail": "inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "electric_car",
+        "kind": 5,
+        "importPath": "inheritance",
+        "description": "inheritance",
+        "peekOfCode": "electric_car = ElectricCar(\"Tesla\", \"Model Y\", 2020,2000)\nelectric_car.battery_capacity = 2000\nprint(f\"CEngine car brand: {electric_car.brand} \")",
+        "detail": "inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "electric_car.battery_capacity",
+        "kind": 5,
+        "importPath": "inheritance",
+        "description": "inheritance",
+        "peekOfCode": "electric_car.battery_capacity = 2000\nprint(f\"CEngine car brand: {electric_car.brand} \")",
+        "detail": "inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "full_name",
+        "kind": 5,
+        "importPath": "intro",
+        "description": "intro",
+        "peekOfCode": "full_name = \"Amed\"\ngender = \"M\"\nif (full_name == \"Siri\" and gender == \"F\"):\n    print(\"TRUE - AND\")\nif (full_name == \"Siri\" or gender == \"F\"):\n    print(\"TRUE - OR\")",
+        "detail": "intro",
+        "documentation": {}
+    },
+    {
+        "label": "gender",
+        "kind": 5,
+        "importPath": "intro",
+        "description": "intro",
+        "peekOfCode": "gender = \"M\"\nif (full_name == \"Siri\" and gender == \"F\"):\n    print(\"TRUE - AND\")\nif (full_name == \"Siri\" or gender == \"F\"):\n    print(\"TRUE - OR\")",
+        "detail": "intro",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "while_loop",
+        "description": "while_loop",
+        "peekOfCode": "number = 1\nwhile number <= 10:\n    print(f\"Number {number}\")\n    number += 1\nfor number in range(1, 11):\n    print(f\"For Loop Number: {number}\")",
+        "detail": "while_loop",
+        "documentation": {}
+    }
+]
