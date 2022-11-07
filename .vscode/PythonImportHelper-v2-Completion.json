@@ -16,6 +16,157 @@
         "documentation": {}
     },
     {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "Payroll",
+        "kind": 6,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "class Payroll(ABC):\n    @abstractmethod\n    def print_payroll(self):\n        pass\nclass Employee():\n    id = 0\n    first_name = ''\n    last_name = ''\n    middle_name = ''\n    role = ''",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "Employee",
+        "kind": 6,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "class Employee():\n    id = 0\n    first_name = ''\n    last_name = ''\n    middle_name = ''\n    role = ''\n    email = ''\n    phone_number = ''\n    is_active = True\n    salary = 0",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "FullTimeEmployee",
+        "kind": 6,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "class FullTimeEmployee(Employee, Payroll):\n    def print_payroll(self):\n        print(f\"Employee Name: {self.first_name}, {self.last_name} \")\n        print(f\"Net Salary: {self.salary}\")\nclass HourlyEmployee(Employee, Payroll):\n    number_of_hours_worked = 0\n    hourly_rate = 0\n    def print_payroll(self):\n        self.salary = self.number_of_hours_worked * self.hourly_rate\n        print(f\"Employee Name: {self.first_name}, {self.last_name}\")",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "HourlyEmployee",
+        "kind": 6,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "class HourlyEmployee(Employee, Payroll):\n    number_of_hours_worked = 0\n    hourly_rate = 0\n    def print_payroll(self):\n        self.salary = self.number_of_hours_worked * self.hourly_rate\n        print(f\"Employee Name: {self.first_name}, {self.last_name}\")\n        print(f\"Net Salary: {self.salary}\")\nfull_time = FullTimeEmployee() # Instantiation\nfull_time.salary = 10000\nfull_time.first_name = \"Peru\"",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "full_time",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "full_time = FullTimeEmployee() # Instantiation\nfull_time.salary = 10000\nfull_time.first_name = \"Peru\"\nfull_time.last_name = \"Para\"\nfull_time.middle_name = \"Para para para\"\nfull_time.print_payroll()\nhourly_employee = HourlyEmployee()\nhourly_employee.first_name = \"Favor\"\nhourly_employee.last_name = \"Okechukwu\"\nhourly_employee.middle_name = \"Gongon\"",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "full_time.salary",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "full_time.salary = 10000\nfull_time.first_name = \"Peru\"\nfull_time.last_name = \"Para\"\nfull_time.middle_name = \"Para para para\"\nfull_time.print_payroll()\nhourly_employee = HourlyEmployee()\nhourly_employee.first_name = \"Favor\"\nhourly_employee.last_name = \"Okechukwu\"\nhourly_employee.middle_name = \"Gongon\"\nhourly_employee.hourly_rate = 50",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "full_time.first_name",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "full_time.first_name = \"Peru\"\nfull_time.last_name = \"Para\"\nfull_time.middle_name = \"Para para para\"\nfull_time.print_payroll()\nhourly_employee = HourlyEmployee()\nhourly_employee.first_name = \"Favor\"\nhourly_employee.last_name = \"Okechukwu\"\nhourly_employee.middle_name = \"Gongon\"\nhourly_employee.hourly_rate = 50\nhourly_employee.number_of_hours_worked = 40",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "full_time.last_name",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "full_time.last_name = \"Para\"\nfull_time.middle_name = \"Para para para\"\nfull_time.print_payroll()\nhourly_employee = HourlyEmployee()\nhourly_employee.first_name = \"Favor\"\nhourly_employee.last_name = \"Okechukwu\"\nhourly_employee.middle_name = \"Gongon\"\nhourly_employee.hourly_rate = 50\nhourly_employee.number_of_hours_worked = 40\nhourly_employee.print_payroll()",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "full_time.middle_name",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "full_time.middle_name = \"Para para para\"\nfull_time.print_payroll()\nhourly_employee = HourlyEmployee()\nhourly_employee.first_name = \"Favor\"\nhourly_employee.last_name = \"Okechukwu\"\nhourly_employee.middle_name = \"Gongon\"\nhourly_employee.hourly_rate = 50\nhourly_employee.number_of_hours_worked = 40\nhourly_employee.print_payroll()",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "hourly_employee",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "hourly_employee = HourlyEmployee()\nhourly_employee.first_name = \"Favor\"\nhourly_employee.last_name = \"Okechukwu\"\nhourly_employee.middle_name = \"Gongon\"\nhourly_employee.hourly_rate = 50\nhourly_employee.number_of_hours_worked = 40\nhourly_employee.print_payroll()",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "hourly_employee.first_name",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "hourly_employee.first_name = \"Favor\"\nhourly_employee.last_name = \"Okechukwu\"\nhourly_employee.middle_name = \"Gongon\"\nhourly_employee.hourly_rate = 50\nhourly_employee.number_of_hours_worked = 40\nhourly_employee.print_payroll()",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "hourly_employee.last_name",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "hourly_employee.last_name = \"Okechukwu\"\nhourly_employee.middle_name = \"Gongon\"\nhourly_employee.hourly_rate = 50\nhourly_employee.number_of_hours_worked = 40\nhourly_employee.print_payroll()",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "hourly_employee.middle_name",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "hourly_employee.middle_name = \"Gongon\"\nhourly_employee.hourly_rate = 50\nhourly_employee.number_of_hours_worked = 40\nhourly_employee.print_payroll()",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "hourly_employee.hourly_rate",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "hourly_employee.hourly_rate = 50\nhourly_employee.number_of_hours_worked = 40\nhourly_employee.print_payroll()",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "hourly_employee.number_of_hours_worked",
+        "kind": 5,
+        "importPath": "_abstract",
+        "description": "_abstract",
+        "peekOfCode": "hourly_employee.number_of_hours_worked = 40\nhourly_employee.print_payroll()",
+        "detail": "_abstract",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "kind": 6,
         "importPath": "abstract_class",
