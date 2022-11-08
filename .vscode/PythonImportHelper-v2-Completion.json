@@ -311,6 +311,69 @@
         "documentation": {}
     },
     {
+        "label": "eit",
+        "kind": 5,
+        "importPath": "data structures - dictionary",
+        "description": "data structures - dictionary",
+        "peekOfCode": "eit = {\n    \"name\": \"Olamide\",\n    \"email\": \"olamide@meltwater.org\",\n    \"phone_number\": \"+234788900987\"    \n}\neit[\"phone_number\"] = \"+25432233266\"\neits = [\n    {\n    \"name\": \"Olamide\",\n    \"email\": \"olamide@meltwater.org\",",
+        "detail": "data structures - dictionary",
+        "documentation": {}
+    },
+    {
+        "label": "eit[\"phone_number\"]",
+        "kind": 5,
+        "importPath": "data structures - dictionary",
+        "description": "data structures - dictionary",
+        "peekOfCode": "eit[\"phone_number\"] = \"+25432233266\"\neits = [\n    {\n    \"name\": \"Olamide\",\n    \"email\": \"olamide@meltwater.org\",\n    \"phone_number\": \"+234788900987\"    \n},\n    {\n    \"name\": \"Richard\",\n    \"email\": \"richard@meltwater.org\",",
+        "detail": "data structures - dictionary",
+        "documentation": {}
+    },
+    {
+        "label": "eits",
+        "kind": 5,
+        "importPath": "data structures - dictionary",
+        "description": "data structures - dictionary",
+        "peekOfCode": "eits = [\n    {\n    \"name\": \"Olamide\",\n    \"email\": \"olamide@meltwater.org\",\n    \"phone_number\": \"+234788900987\"    \n},\n    {\n    \"name\": \"Richard\",\n    \"email\": \"richard@meltwater.org\",\n    \"phone_number\": \"+234788900987\"    ",
+        "detail": "data structures - dictionary",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "data structures - sets",
+        "description": "data structures - sets",
+        "peekOfCode": "fruits = {\"mango\", \"apple\", \"cherry\", \"banana\", \"apple\", \"banana\"}\nprint(fruits)",
+        "detail": "data structures - sets",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "data structures - tuples",
+        "description": "data structures - tuples",
+        "peekOfCode": "fruits = (\"banana\", \"apple\", \"cherry\", \"cherry\")\nprint(fruits)",
+        "detail": "data structures - tuples",
+        "documentation": {}
+    },
+    {
+        "label": "eits",
+        "kind": 5,
+        "importPath": "data structures",
+        "description": "data structures",
+        "peekOfCode": "eits = [\"Olamida\", \"Richard\", \"Emmanuel Odero\", \"Ahmed\", \"Clinton\", \"Siri\"]\neits[3] = \"Clinton\"\nfor position in range(len(eits)):\n    display_number = position + 1\n    eit_name = eits[position]\n    print(display_number, \" - \", eit_name)",
+        "detail": "data structures",
+        "documentation": {}
+    },
+    {
+        "label": "eits[3]",
+        "kind": 5,
+        "importPath": "data structures",
+        "description": "data structures",
+        "peekOfCode": "eits[3] = \"Clinton\"\nfor position in range(len(eits)):\n    display_number = position + 1\n    eit_name = eits[position]\n    print(display_number, \" - \", eit_name)",
+        "detail": "data structures",
+        "documentation": {}
+    },
+    {
         "label": "pwd",
         "kind": 5,
         "importPath": "if_statements",
